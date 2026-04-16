@@ -1,0 +1,31 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Doe;John;;;
+FN:John Doe
+NICKNAME:Johnny-O
+ORG:Example.com Inc.;
+TITLE:Imaginary test person
+EMAIL;type=INTERNET;type=WORK;type=pref:johnDoe@example.org
+TEL;type=WORK;type=pref:+1 617 555 1212
+TEL;type=WORK:+1 (617) 555-1234
+TEL;type=CELL:+1 781 555 1212
+TEL;type=HOME:+1 202 555 1212
+ADR;type=WORK:;;2 Enterprise Avenue;Worktown;NY;01111;USA
+ADR;type=HOME;type=pref:;;3 Acacia Avenue;Hoemtown;MA;02222;USA
+NOTE:John Doe has a long and varied history\, being documented on more police files that anyone else. Reports of his death are alas numerous.
+URL;type=pref:http\://www.example/com/doe
+URL:http\://www.example.com/Joe/foaf.df
+PHOTO:https://via.placeholder.com/150/FF0000
+BDAY:19960415
+ANNIVERSARY:19960415
+GENDER:M;Guy
+IMPP;type=pref:xmpp:johnDoe@example.org
+LANG;en
+TZ:Raleigh/North America
+GEO:geo:37.386013,-122.082932
+ROLE:Example Person
+LOGO:PHOTO:https://via.placeholder.com/150/00FF00
+X-SOCIALPROFILE;type=twitter:http://twitter.com/johndoe
+
+CATEGORIES:Work,Test group
+END:VCARD

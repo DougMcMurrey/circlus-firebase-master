@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "functions"
+		},
+		{
+			"path": "public/docs"
+		}
+	],
+	"settings": {
+		"editor.tabSize": 2
+	}
+}

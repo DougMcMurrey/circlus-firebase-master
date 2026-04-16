@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Doe;John;;;
+FN:John Doe
+TITLE:Imaginary test person
+EMAIL:johnDoe@example.org
+TEL;type=WORK:+1 617 555 1212
+NOTE:John Doe has a long and varied history\, being documented on more police files that anyone else. Reports of his death are alas numerous.
+END:VCARD

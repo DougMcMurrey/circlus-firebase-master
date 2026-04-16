@@ -1,0 +1,19 @@
+service firebase.storage {
+	match /b/{bucket}/o {
+		match /{allPaths=**} {
+			allow get: if false;
+			allow list: if false;
+			allow write: if false;
+		}
+		match /{userId}/clubs/{clubId}/members/{memberId} {
+			allow get: if true;
+			// allow write: if request.auth.uid == userId;
+		}
+		match /{userId}/clubs/{clubId}/banner/{banner} {
+			allow get: if true;
+		}
+		// match /{userId}/clubs/{clubId}/members/thumbs/{thumbName} {
+		// 	allow get: if true;
+		// }
+	}
+}

@@ -1,0 +1,45 @@
+BEGIN:VCARD
+VERSION:4.0
+ORG;VALUE=text:DOUG MCMURREY
+TEL;TYPE=work,voice;VALUE=text:7138509323
+TEL;TYPE=cell,voice;VALUE=text:7132538760
+ADR;TYPE=work;VALUE=text:;;2005 CLAREMONT LANE;HOUSTON;Texas;77019;USA
+LABEL;TYPE=work;ENCODING=QUOTED-PRINTABLE;VALUE=text:2005 CLAREMONT
+  LANE=0D=0A=
+X-MS-OL-DEFAULT-POSTAL-ADDRESS;VALUE=text:0
+EMAIL;TYPE=pref,internet;VALUE=text:doug@dougmcmurrey.com
+X-MS-CARDPICTURE;TYPE=jpeg;ENCODING=BASE64;VALUE=text:/9j/4AAQSkZJRgABAQEAY
+ ABgAAD/2wBDAAcFBQYFBAcGBQYIBwcIChELCgkJChUPEAwRGBUaGRgVGBcbHichGx0lHRcYIi4
+ iJSgpKywrGiAvMy8qMicqKyr/2wBDAQcICAoJChQLCxQqHBgcKioqKioqKioqKioqKioqKioqK
+ ioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKir/wAARCACEAB8DASIAAhEBAxEB/8QAHwA
+ AAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRB
+ RIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkd
+ ISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKzt
+ LW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQE
+ BAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBU
+ QdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1R
+ VVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3u
+ Lm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD37zM
+ sQKGkVB6moR3NNNAEisZH56elJO2AAKdEO9RyfPNj0oAU9BTT2pxOTSDlqAJl+VP1qGMZYk1LK
+ dsf6VEOIvc0AFPiGWphqaIYGaAGXB5AFMl4VRSt883tmmSnL0AP71KPljyfSolGTzUrjeuB09a
+ AIo+pJpvls7Z6VJhY14+aonkZqALC7T91ajlJzjP4VIg+WovvyfjQAScIBURHpU0mN3zdfQVGX
+ I+7wPagCy3yJ+FRqSx6/TFOnPQU1eEzQBG5yxph606mnrQBPKcuaH4jpuNzj3okPSgBlNPWnU0
+ 9aALCheopHTJ4NCcDJ9c1Gf60ABQimlSOop24+tHmH0FAEp4j/Coj0oooASmnrRRQB//Z
+X-MS-OL-DESIGN;CHARSET=utf-8;VALUE=text:<card
+  xmlns="http://schemas.microsoft.com/office/outlook/12/electronicbusinessc
+ ards" ver="1.0" layout="left" bgcolor="ffffff"><img xmlns="" align="fit" a
+ rea="16" use="cardpicture"/><fld xmlns="" prop="org" align="left" dir="ltr
+ " style="b" color="000000" size="10"/><fld xmlns="" prop="blank" size="8"/
+ ><fld xmlns="" prop="telwork" align="left" dir="ltr" color="d48d2a" size="
+ 8"><label align="right" color="626262">Work</label></fld><fld xmlns="" pro
+ p="telcell" align="left" dir="ltr" color="d48d2a" size="8"><label align="r
+ ight" color="626262">Mobile</label></fld><fld xmlns="" prop="email" align=
+ "left" dir="ltr" color="d48d2a" size="8"/><fld xmlns="" prop="blank" size=
+ "8"/><fld xmlns="" prop="addrwork" align="left" dir="ltr" color="000000" s
+ ize="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" s
+ ize="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" s
+ ize="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" s
+ ize="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" s
+ ize="8"/><fld xmlns="" prop="blank" size="8"/></card>
+REV;VALUE=text:20191127T173840Z
+END:VCARD

@@ -1,0 +1,102 @@
+rules_version = '2';
+service cloud.firestore {
+	match /databases/{database}/documents {
+		match /{document=**} {
+			allow read, write: if false
+		}
+
+		function fieldUnchanged(d) {
+			return request.resource.data[d] == resource.data[d]
+		}
+
+		function hasField(d) {
+			return d in request.resource.data
+		}
+
+		function onlyHasFields(fields) {
+			return request.resource.data.size() <= fields.size()
+				&& request.resource.data.keys().hasOnly(fields)
+		}
+
+		function isUser() {
+			return request.auth != null
+		}
+
+		function isOwner() {
+			return resource.data.owner == request.auth.uid
+		}
+
+		function createdWithOwner() {
+			return request.resource.data.owner != null
+				&& request.resource.data.owner == request.auth.uid
+		}
+
+		// https://stripe.com/docs/api/subscriptions/object#subscription_object-status 
+		function paymentStatusOkay(s) {
+			return s == 'active' ||
+			s == 'trialing' ||
+			s == 'past_due'
+		}
+
+		// direct firestore access is for ADMINISTRATOR USERS ONLY.
+		// visitor / editor level users should go through HTTP functions...
+		match /clubs/{club} {
+			allow read:
+				if isOwner()
+			allow update:
+				if isOwner()
+				&& paymentStatusOkay(resource.data.status)
+				&& onlyHasFields([
+					'owner',
+					'name',
+					'memberList',
+					'passwordEnabled',
+					'passwordSet',
+					'status',
+					'stripe',
+					'dateCreated'
+				])
+				&& fieldUnchanged('name') // use https function changeClubName
+				&& fieldUnchanged('memberList')
+				&& fieldUnchanged('owner')
+				&& fieldUnchanged('status')
+				&& fieldUnchanged('passwordSet')
+				&& fieldUnchanged('stripe')
+				&& fieldUnchanged('dateCreated')
+				// passwordEnabled cannot be true if passwordSet is false
+				&& (
+					(
+						request.resource.data.passwordSet == false
+						&& request.resource.data.passwordEnabled == false 
+					)
+					|| request.resource.data.passwordSet == true
+				)
+			
+			match /members/{member} {
+				allow read:
+					if isOwner()
+				// allow create:
+				// 	if createdWithOwner()
+				// 	&& onlyHasFields(['owner', 'card', 'email'])
+				
+				// update members through updateMember() https function.
+				// allow update:
+				// 	if onlyHasFields(['owner', 'card', 'editUrl', 'email'])
+				// 	&& fieldUnchanged('owner')
+				// 	&& fieldUnchanged('editUrl')
+			}
+		}
+
+		match /users/{user} {
+			allow get:
+				if user == request.auth.uid;
+			allow update:
+				if onlyHasFields(['ownedClubs'])
+				&& fieldUnchanged('ownedClubs')
+		}
+
+		match /passHashes/{clubUrlHash} {
+			allow read, write: if false;
+		}
+	}
+}

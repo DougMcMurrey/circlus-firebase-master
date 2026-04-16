@@ -1,0 +1,107 @@
+{
+	"name": "circlus-firebase",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"chance": "^1.1.4",
+		"copy-to-clipboard": "^3.3.1",
+		"firebase": "^7.13.2",
+		"fuse.js": "^3.4.6",
+		"libphonenumber-js": "^1.7.44",
+		"lodash": "^4.17.15",
+		"moment": "^2.24.0",
+		"papaparse": "^5.1.1",
+		"qrcode": "^1.4.4",
+		"react": "^16.13.0",
+		"react-device-detect": "^1.11.14",
+		"react-dom": "^16.13.0",
+		"react-dropzone": "^10.2.1",
+		"react-firebase-hooks": "^2.1.1",
+		"react-ga": "^2.7.0",
+		"react-processor-hook": "^1.1.0",
+		"react-responsive": "^8.0.3",
+		"react-router-dom": "^5.1.2",
+		"react-router-hash-link": "^1.2.2",
+		"react-scripts": "^3.4.0",
+		"react-scrollable-anchor": "^0.6.1",
+		"react-semantic-toasts": "^0.6.5",
+		"react-sticky-box": "^0.9.3",
+		"react-stripe-elements": "^5.1.0",
+		"react-textarea-autosize": "^7.1.2",
+		"use-force-update": "^1.0.7",
+		"vcfer": "^1.1.1"
+	},
+	"scripts": {
+		"start": "craco start",
+		"start:docs": "docsify serve ./public/docs",
+		"build": "node ./scripts/export-favicon.js && craco build",
+		"test:react": "craco test",
+		"test": "jest",
+		"eject": "craco eject",
+		"prettierify": "prettier --write \"src/**/*.{js,less,json}\"",
+		"export-favicon": "node ./scripts/export-favicon.js",
+		"deploy": "node ./scripts/deploy.js"
+	},
+	"eslintConfig": {
+		"extends": "react-app",
+		"include": [
+			"jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"importSort": {
+		".js, .jsx": {
+			"parser": "babylon",
+			"style": "module",
+			"options": {}
+		}
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.8.4",
+		"@babel/node": "^7.8.4",
+		"@babel/plugin-proposal-optional-chaining": "^7.8.3",
+		"@babel/preset-env": "^7.8.6",
+		"@babel/register": "^7.8.6",
+		"@craco/craco": "^5.6.3",
+		"@firebase/testing": "^0.13.4",
+		"@semantic-ui-react/craco-less": "^1.2.1",
+		"@testing-library/jest-dom": "^4.2.4",
+		"@testing-library/react": "^9.4.1",
+		"@types/jest": "^24.9.1",
+		"@types/vcf": "^2.0.1",
+		"acorn": "^7.1.1",
+		"argon2": "^0.25.1",
+		"babel-jest": "^24.9.0",
+		"babel-plugin-transform-semantic-ui-react-imports": "^1.4.1",
+		"concurrently": "^5.1.0",
+		"crypto-random-string": "^3.1.0",
+		"dotenv-flow": "^3.1.0",
+		"eslint-plugin-jest": "^23.8.1",
+		"eslint-plugin-react": "^7.18.3",
+		"firebase-admin": "^8.9.2",
+		"firebase-functions": "^3.3.0",
+		"firebase-functions-test": "^0.1.7",
+		"firebase-server": "^1.1.0",
+		"identity-obj-proxy": "^3.0.0",
+		"inquirer": "^7.1.0",
+		"jest": "^24.9.0",
+		"minimist": "^1.2.5",
+		"nodemon": "^1.19.4",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^1.19.1",
+		"semantic-ui-less": "^2.4.1",
+		"semantic-ui-react": "^0.88.2",
+		"typescript": "^3.8.3"
+	}
+}
