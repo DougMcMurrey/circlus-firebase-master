@@ -1,0 +1,13 @@
+extends ../template.pug
+
+//- needs the following locals:
+//- clubName
+//- club
+//- editKey
+
+block content
+  - var editUrl = `${baseUrl}/c/${club}/e/${editKey}`
+  p You've been added to the club #[b #{clubName}] on Circlus! To edit your contact information, click on the link below
+  br
+  p.important-link: a(href=editUrl) #{editUrl}
+  br

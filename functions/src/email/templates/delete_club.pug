@@ -1,0 +1,13 @@
+extends ../template.pug
+
+//- needs the following locals:
+//- clubName
+//- club
+//- deleteKey
+
+
+block content
+  - var deleteUrl = `${baseUrl}/app/club/${club}/confirm_delete/${deleteKey}`
+  p You requested to delete the club: #[b #{clubName}]. To delete this club, click on the following link. This link expires one after hour being sent.
+  p.important-link: a(href=deleteUrl) Click to confirm club deletion
+  p: b WARNING: Deleting a club is permanent.

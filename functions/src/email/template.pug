@@ -1,0 +1,15 @@
+
+html
+	head
+		link(rel="stylesheet", href="../style.css", data-inline="data-inline")
+	body
+		#header
+			h1
+				a(href=baseUrl) Circlus
+		#content
+			block content
+		#footer
+			a(href=`${baseUrl}`) Circlus
+			a(href=`${baseUrl}/about`) About Us
+			a(href=`${baseUrl}/docs/#/faq`) FAQ
+			a(href=`${baseUrl}/report_spam?key=${spamKey}`) Wrong Person / Spam?

@@ -1,0 +1,75 @@
+{
+  "short_name": "Circlus",
+  "name": "Circlus",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "64x64 32x32 24x24 16x16"
+    },
+    {
+      "src": "favicon-196.ico",
+      "type": "image/x-icon",
+      "sizes": "196x196"
+    },
+    {
+      "src": "favicon-192.ico",
+      "type": "image/x-icon",
+      "sizes": "192x192"
+    },
+    {
+      "src": "favicon-180.ico",
+      "type": "image/x-icon",
+      "sizes": "180x180"
+    },
+    {
+      "src": "favicon-167.ico",
+      "type": "image/x-icon",
+      "sizes": "167x167"
+    },
+    {
+      "src": "favicon-152.ico",
+      "type": "image/x-icon",
+      "sizes": "152x152"
+    },
+    {
+      "src": "favicon-128.ico",
+      "type": "image/x-icon",
+      "sizes": "128x128"
+    },
+    {
+      "src": "favicon-64.ico",
+      "type": "image/x-icon",
+      "sizes": "64x64"
+    },
+    {
+      "src": "favicon-32.ico",
+      "type": "image/x-icon",
+      "sizes": "32x32"
+    },
+    {
+      "src": "favicon-16.ico",
+      "type": "image/x-icon",
+      "sizes": "16x16"
+    },
+    {
+      "src": "logo-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "logo-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/docs/_media/logo.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ff7f50",
+  "background_color": "#ffffff"
+}
